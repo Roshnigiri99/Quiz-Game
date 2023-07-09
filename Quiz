@@ -1,0 +1,33 @@
+print("Welcome to my quiz!")
+playing = input("Do you want to play ?")
+if playing.lower() != "yes":
+  quit()
+print("Okay! Let's play :) Write your answers in lower case")
+score = 0
+
+answer = input("What is the full form of CPU? ")
+if answer == "central processing unit":
+
+  print("Correct answer!")
+  score += 1
+else:
+  print("Incorrect !")
+answer = input("What is the full form of MU? ")
+if answer == "memory unit":
+  print("Correct answer!")
+  score += 1
+else:
+  print("Incorrect !")
+answer = input("What is the full form of ALU? ")
+if answer == "arithmetic logical unit":
+  print("Correct answer!")
+  score += 1
+else:
+  print("Incorrect !")
+answer = input("What is the full form of ISP? ")
+if answer == "internet service provider":
+  print("Correct answer!")
+  score += 1
+else:
+  print("Incorrect !")
+print("You got   " + str(score) + "  questions correct!")
